@@ -1,15 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 body {
 	font-family: Georgia, serif;
 	background-image: url("images/glowing.jpg");
-	background-repeat: no-repeat, repeat;
+	background-repeat: repeat-x;
 	background-size: cover;
+	background-position: center;
+	background-blend-mode: hue;
 }
 h1 {
 	color: #000019;
   font-size: 4em;
 	text-shadow: 1px 1px #558ABB;
 	font-family: Georgia, serif;
-  padding-top: 40px;
+  padding-top: 10px;
 	width: 100%;
 	background-color:#558ABB;
 	padding: 10px ;
@@ -21,7 +31,6 @@ p {
 	font-family: Georgia, serif;
 	text-shadow: 1px 1px #558ABB;
 	width: 100%;
-	padding-right: .5in;
 }
 div.a {
 	text-align: center;
@@ -31,11 +40,15 @@ div.a {
   display: flex;
 }
 
-.columntop {
-  flex: 50%;
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
 }
-.columnbottom {
-	flex: 25%;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 h2 {
 	text-align: center;
@@ -50,13 +63,16 @@ h3 {
 	font-size: 1.5em;
 }
 img {
-	padding: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 #right {
 	display: block;
 	text-align: right;
 }
 #mirrors {
-	display: -moz-stack;
-	align-content: center;
+	align-self: center;
+}
+#left {
+  text-align: left;
 }
