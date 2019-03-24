@@ -1,0 +1,62 @@
+body {
+	font-family: Georgia, serif;
+	background-image: url("images/glowing.jpg");
+	background-repeat: no-repeat, repeat;
+	background-size: cover;
+}
+h1 {
+	color: #000019;
+  font-size: 4em;
+	text-shadow: 1px 1px #558ABB;
+	font-family: Georgia, serif;
+  padding-top: 40px;
+	width: 100%;
+	background-color:#558ABB;
+	padding: 10px ;
+  border: 4px solid green ;
+}
+p {
+	color: #1C0601;
+	font-size: 1.5em;
+	font-family: Georgia, serif;
+	text-shadow: 1px 1px #558ABB;
+	width: 100%;
+	padding-right: .5in;
+}
+div.a {
+	text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+.columntop {
+  flex: 50%;
+}
+.columnbottom {
+	flex: 25%;
+}
+h2 {
+	text-align: center;
+	text-shadow: 1px 1px #558ABB;
+	font-family: Georgia, serif;
+	font-size: 2.5em;
+}
+h3 {
+	text-align: center;
+	text-shadow: 1px 1px #558ABB;
+	font-family: Georgia, serif;
+	font-size: 1.5em;
+}
+img {
+	padding: 30px;
+}
+#right {
+	display: block;
+	text-align: right;
+}
+#mirrors {
+	display: -moz-stack;
+	align-content: center;
+}
